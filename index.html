@@ -200,32 +200,33 @@
                         <p class="text-xs text-zinc-400">最快對接渠道：</p>
                         <a href="https://api.whatsapp.com/send?phone=85251309781&text=你好！我睇咗網頁嘅 Sample，想查詢球衣/團隊衫訂製詳情。" target="_blank" class="mt-3 w-full inline-flex items-center justify-center px-6 py-4 text-base font-bold text-white bg-emerald-600 hover:bg-emerald-500 transition-all rounded-lg gap-3 shadow-xl shadow-emerald-600/10 group">
                             <svg class="w-6 h-6 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.324 5.328 0 11.822 0c3.148.012 6.107 1.239 8.331 3.463 2.224 2.225 3.447 5.186 3.445 8.337-.003 6.495-5.322 11.82-11.817 11.82v-.002c-2.01-.001-3.987-.514-5.742-1.488L0 24zm6.15-4.218l.375.223c1.558.925 3.347 1.411 5.176 1.412 5.348 0 9.704-4.349 9.707-9.708.001-2.596-1.01-5.039-2.85-6.88-1.84-1.84-4.285-2.85-6.883-2.851-5.352 0-9.711 4.35-9.713 9.709-.001 1.895.493 3.749 1.43 5.37l.245.422L2.946 19.9l3.261-.855zm9.645-5.37c-.266-.134-1.579-.78-1.822-.867-.243-.088-.419-.133-.596.133-.176.265-.684.867-.838 1.044-.155.177-.309.199-.575.066-.266-.134-1.125-.415-2.144-1.325-.792-.707-1.327-1.58-1.482-1.847-.155-.266-.017-.41.117-.542.121-.12.266-.309.4-.464.133-.155.177-.265.266-.441.088-.177.044-.332-.022-.464-.066-.133-.596-1.436-.817-1.966-.215-.518-.432-.448-.596-.456-.153-.008-.331-.01-.508-.01-.177 0-.464.066-.707.332-.243.265-.928.906-.928 2.21 0 1.304.949 2.564 1.082 2.741.133.177 1.867 2.851 4.524 3.998.632.273 1.126.436 1.512.559.635.202 1.212.174 1.669.106.51-.077 1.579-.645 1.8-.1.222-.544.222-.883.155-.97-.067-.088-.244-.133-.51-.265z"/></svg>
-                            一鍵 WhatsApp 聯絡 (51309781)
+                            一鍵 WhatsApp 聯絡
                         </a>
                     </div>
                 </div>
 
                 <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-xl">
                     <h3 class="text-lg font-bold text-white mb-6">或填寫意向表格：</h3>
-                    <form onsubmit="event.preventDefault(); alert('提交成功！');" class="space-y-4">
+                    <form id="inquiry-form" class="space-y-4" novalidate>
                         <div>
-                            <label class="block text-xs font-medium text-zinc-400 mb-1">聯絡人姓名</label>
-                            <input type="text" placeholder="例如：Gordon" class="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-pink-500 transition-colors">
+                            <label for="contact-name" class="block text-xs font-medium text-zinc-400 mb-1">聯絡人姓名 <span class="text-pink-500">*</span></label>
+                            <input type="text" id="contact-name" name="contactName" required placeholder="例如：Peter" class="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-pink-500 transition-colors">
                         </div>
                         <div>
-                            <label class="block text-xs font-medium text-zinc-400 mb-1">團隊名稱</label>
-                            <input type="text" placeholder="例如：Orion FC" class="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-pink-500 transition-colors">
+                            <label for="team-name" class="block text-xs font-medium text-zinc-400 mb-1">團隊名稱 <span class="text-pink-500">*</span></label>
+                            <input type="text" id="team-name" name="teamName" required placeholder="例如：HKFC" class="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-pink-500 transition-colors">
                         </div>
                         <div>
-                            <label class="block text-xs font-medium text-zinc-400 mb-1">預計數量</label>
-                            <select class="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-pink-500 transition-colors">
-                                <option>10 - 20 件</option>
-                                <option>21 - 50 件</option>
-                                <option>51 件以上</option>
+                            <label for="quantity" class="block text-xs font-medium text-zinc-400 mb-1">預計數量</label>
+                            <select id="quantity" name="quantity" class="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-pink-500 transition-colors">
+                                <option value="10 - 20 件">10 - 20 件</option>
+                                <option value="21 - 50 件">21 - 50 件</option>
+                                <option value="51 件以上">51 件以上</option>
                             </select>
                         </div>
-                        <button type="submit" class="w-full py-3 bg-gradient-to-r from-cyan-500 to-pink-600 text-white font-bold text-sm rounded shadow-lg shadow-pink-600/10">
-                            提交表格
+                        <p id="form-error" class="hidden text-xs text-red-400">請填寫聯絡人姓名同團隊名稱。</p>
+                        <button type="submit" class="w-full py-3 bg-gradient-to-r from-cyan-500 to-pink-600 text-white font-bold text-sm rounded shadow-lg shadow-pink-600/10 hover:opacity-90 transition-opacity">
+                            透過 WhatsApp 提交查詢
                         </button>
                     </form>
                 </div>
@@ -237,6 +238,42 @@
     <footer class="bg-zinc-950 border-t border-zinc-900 py-8 text-center text-[11px] text-zinc-600 font-mono">
         &copy; 2026 PROKIT Teamwear Studio. Refined with local image paths.
     </footer>
+
+    <script>
+        (function () {
+            var WHATSAPP_PHONE = '85251309781';
+            var form = document.getElementById('inquiry-form');
+            var errorEl = document.getElementById('form-error');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                var name = document.getElementById('contact-name').value.trim();
+                var team = document.getElementById('team-name').value.trim();
+                var quantity = document.getElementById('quantity').value;
+
+                if (!name || !team) {
+                    errorEl.classList.remove('hidden');
+                    return;
+                }
+
+                errorEl.classList.add('hidden');
+
+                var message = [
+                    '你好！我透過 PROKIT 網站提交查詢：',
+                    '',
+                    '聯絡人：' + name,
+                    '團隊名稱：' + team,
+                    '預計數量：' + quantity
+                ].join('\n');
+
+                var url = 'https://api.whatsapp.com/send?phone=' + WHATSAPP_PHONE +
+                    '&text=' + encodeURIComponent(message);
+
+                window.open(url, '_blank');
+            });
+        })();
+    </script>
 
 </body>
 </html>
