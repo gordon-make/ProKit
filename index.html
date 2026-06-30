@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROKIT - 專業球衣及團隊衫訂製</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .neon-border-pink:hover { box-shadow: 0 0 15px rgba(244, 63, 94, 0.4); }
+        .neon-border-cyan:hover { box-shadow: 0 0 15px rgba(34, 211, 238, 0.4); }
+        .neon-border-amber:hover { box-shadow: 0 0 15px rgba(217, 119, 6, 0.4); }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-pink-500 selection:text-white scroll-smooth">
+
+    <!-- 1. Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-zinc-950/90 backdrop-blur-md border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-zinc-200 to-pink-500">PROKIT.</span>
+                <span class="text-[10px] bg-zinc-900 text-zinc-400 px-2 py-0.5 rounded border border-zinc-800 uppercase tracking-widest">Teamwear</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide text-zinc-400">
+                <a href="#services" class="hover:text-white transition-colors">工藝細節</a>
+                <a href="#samples" class="hover:text-pink-400 transition-colors">實物範例</a>
+                <a href="#process" class="hover:text-cyan-400 transition-colors">製作流程</a>
+                <a href="#contact" class="hover:text-white transition-colors">聯絡/報價</a>
+            </nav>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=85251309781&text=你好！我睇咗網頁嘅設計，想查詢球衣團隊衫訂製。" target="_blank" class="inline-flex items-center justify-center px-4 py-2 text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-500 transition-all rounded gap-1.5 shadow-lg shadow-emerald-600/20">
+                    WhatsApp 查詢
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="relative overflow-hidden pt-24 pb-24 border-b border-zinc-900 bg-zinc-950">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(244,63,94,0.05),transparent_45%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(34,211,238,0.03),transparent_45%)]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <span class="text-xs font-bold tracking-widest text-pink-400 uppercase bg-pink-950/50 border border-pink-900/60 px-3 py-1 rounded">
+                    HIGH-END JERSEY CUSTOMIZATION
+                </span>
+                <h1 class="mt-6 text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
+                    將團隊魂實體化。<br>
+                    由零打造<span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500">頂級型格戰衣</span>
+                </h1>
+                <p class="mt-6 text-base text-zinc-400 max-w-xl leading-relaxed">
+                    拒絕千篇一律嘅公版。支援全熱昇華滿版織紋、複雜幾何拼接、公司贊助商高精度印花。本地設計對接，帶出如同職業球隊嘅上身質感。
+                </p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#samples" class="px-6 py-3 text-sm font-bold bg-pink-600 hover:bg-pink-500 text-white rounded transition-all shadow-lg shadow-pink-600/20">
+                        查看最新 Sample 貨品
+                    </a>
+                    <a href="#process" class="px-6 py-3 text-sm font-bold bg-zinc-900 hover:bg-zinc-800 text-zinc-300 rounded transition-all border border-zinc-800">
+                        了解製作流程
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Core Capabilities -->
+    <section id="services" class="py-16 bg-zinc-950 border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-zinc-900/20 border border-zinc-900 rounded-lg">
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                        <span class="text-pink-500">■</span> 全昇華滿版暗紋
+                    </h3>
+                    <p class="mt-2 text-sm text-zinc-400">好似 GK 款嘅傳統金龍雲海紋一樣，圖案與纖維完美融合，圖層細緻，摸唔到膠感，透氣度 100%。</p>
+                </div>
+                <div class="p-6 bg-zinc-900/20 border border-zinc-900 rounded-lg">
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                        <span class="text-cyan-400">■</span> 幾何拼接與撞色設計
+                    </h3>
+                    <p class="mt-2 text-sm text-zinc-400">支援複雜嘅側邊幾何裁片與肩部箭頭線條，灰藍配搭霓虹粉，完美呈現高端潮流運動風。</p>
+                </div>
+                <div class="p-6 bg-zinc-900/20 border border-zinc-900 rounded-lg">
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                        <span class="text-zinc-400">■</span> 多樣化字體與贊助商位
+                    </h3>
+                    <p class="mt-2 text-sm text-zinc-400">無論係胸前 Orion 復古字體、手袖/褲管嘅日文字體，定係後背專屬名字號碼，全部均可高度客製。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Sample Showcase Grid (已熱修復遮罩 Bug) -->
+    <section id="samples" class="py-20 bg-zinc-950 border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-2xl font-black text-white tracking-wider uppercase border-l-4 border-pink-500 pl-3">
+                    OUR REFERENCE SAMPLES / 近期作品
+                </h2>
+                <p class="mt-2 text-zinc-400 text-sm">本地實物圖檔展示中。</p>
+            </div>
+
+            <!-- Product Cards Container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Card 1: Orion Player Kit -->
+                <div class="group bg-zinc-900/40 border border-zinc-900 rounded overflow-hidden neon-border-cyan transition-all duration-300">
+                    <div class="aspect-[4/3] bg-zinc-900 relative overflow-hidden flex items-center justify-center">
+                        <img src="New Jer.jpg" alt="Orion Player Kit" class="w-full h-full object-contain p-2 group-hover:scale-102 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <!-- 備用顯示 -->
+                        <div class="hidden absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-zinc-900">
+                            <span class="text-zinc-500 text-sm font-mono mb-2">[ 提示：請將 "New Jer.jpg" 放於此 HTML 相同資料夾 ]</span>
+                            <span class="text-xs text-zinc-600">Orion 灰藍幾何套裝 (正面/背面/短褲)</span>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-zinc-950/90 text-cyan-400 text-[10px] font-bold px-2 py-0.5 rounded tracking-wider border border-cyan-500/20">
+                            PLAYER KIT / 灰藍套裝
+                        </div>
+                    </div>
+                    <div class="p-5 border-t border-zinc-900">
+                        <span class="text-xs text-cyan-400 font-mono">STYLE 01</span>
+                        <h3 class="text-base font-bold text-white mt-1">Orion 復古灰藍幾何套裝</h3>
+                        <p class="mt-2 text-xs text-zinc-400 leading-relaxed">
+                            <strong>設計規格：</strong> 灰藍大身撞深藍側裁片，搭配肩部與側邊精細粉紅幾何條紋。胸前復古字體與三星標誌。褲管整合「株式会社島袋」等精密日系贊助商字樣。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: GK Dragon Kit (Bug Fixed ✅) -->
+                <div class="group bg-zinc-900/40 border border-zinc-900 rounded overflow-hidden neon-border-amber transition-all duration-300">
+                    <div class="aspect-[4/3] bg-zinc-900 relative overflow-hidden flex items-center justify-center">
+                        <img src="GK_Jersey.jpg" alt="GK Dragon Jersey" class="w-full h-full object-contain p-2 group-hover:scale-102 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <!-- 備用顯示：加返 hidden 預設隱藏，以免遮擋載入成功的圖片 -->
+                        <div class="hidden absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-zinc-900">
+                            <span class="text-amber-500/80 text-sm font-mono mb-1">GOALKEEPER DRAGON KIT</span>
+                            <p class="text-[11px] text-zinc-500 max-w-xs">請將守門員 PDF 匯出成 "GK_Jersey.jpg" 放落一齊，即可喺度直接顯示。</p>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-zinc-950/90 text-amber-500 text-[10px] font-bold px-2 py-0.5 rounded tracking-wider border border-amber-500/20">
+                            GOALKEEPER / 守門員暗紋
+                        </div>
+                    </div>
+                    <div class="p-5 border-t border-zinc-900">
+                        <span class="text-xs text-amber-500 font-mono">STYLE 02</span>
+                        <h3 class="text-base font-bold text-white mt-1">龍魂覺醒・全滿版黑金波衫</h3>
+                        <p class="mt-2 text-xs text-zinc-400 leading-relaxed">
+                            <strong>設計規格：</strong> 極致黑大身配襯金褐色傳統東方龍紋與雲海暗花。胸前採用低調啞光墨黑（Ghosted）Logo 設計，霸氣內斂。
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Production Process Section -->
+    <section id="process" class="py-20 bg-zinc-900/10 border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-black text-white tracking-wide uppercase">WORKFLOW / 製作流程</h2>
+                <p class="mt-3 text-zinc-400 text-sm">工程級嚴格時程控管，由設計到起貨無縫對接</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="relative p-6 bg-zinc-900/40 border border-zinc-800 rounded-lg">
+                    <div class="absolute -top-5 left-6 bg-pink-600 text-white font-mono font-black px-3 py-1 rounded text-sm shadow-md">STEP 01</div>
+                    <h4 class="text-lg font-bold text-white mt-2">確認圖稿與需求</h4>
+                    <p class="mt-2 text-xs text-zinc-400 leading-relaxed">提供你嘅 Reference（如 Orion/GK 龍紋相片），確認大概件數、字體要求及商標位置。</p>
+                </div>
+                <div class="relative p-6 bg-zinc-900/40 border border-zinc-800 rounded-lg">
+                    <div class="absolute -top-5 left-6 bg-zinc-800 text-cyan-400 border border-cyan-500/30 font-mono font-black px-3 py-1 rounded text-sm shadow-md">STEP 02</div>
+                    <h4 class="text-lg font-bold text-white mt-2">設計師數碼排版</h4>
+                    <p class="mt-2 text-xs text-zinc-400 leading-relaxed">出具高清 3D 模擬圖，精確對齊幾何線條、人名號碼與贊助商 Logo，經你 100% 確認。</p>
+                </div>
+                <div class="relative p-6 bg-zinc-900/40 border border-zinc-800 rounded-lg">
+                    <div class="absolute -top-5 left-6 bg-zinc-800 text-zinc-300 border border-zinc-700 font-mono font-black px-3 py-1 rounded text-sm shadow-md">STEP 03</div>
+                    <h4 class="text-lg font-bold text-white mt-2">全熱昇華生產</h4>
+                    <p class="mt-2 text-xs text-zinc-400 leading-relaxed">墨水直接高溫昇華入機能布料，裁片精準拼接縫製，確保色牢度、強韌度達職業賽事級別。</p>
+                </div>
+                <div class="relative p-6 bg-zinc-900/40 border border-zinc-800 rounded-lg">
+                    <div class="absolute -top-5 left-6 bg-pink-600 text-white font-mono font-black px-3 py-1 rounded text-sm shadow-md">STEP 04</div>
+                    <h4 class="text-lg font-bold text-white mt-2">嚴格品管與交付</h4>
+                    <p class="mt-2 text-xs text-zinc-400 leading-relaxed">逐件進行尺寸與印工 Quality Check，包裝妥當後透過順豐速運快速交付到你手上。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact & Quote Section -->
+    <section id="contact" class="py-20 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <div>
+                    <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">GET A QUICK QUOTE</span>
+                    <h2 class="text-3xl font-black text-white mt-2 tracking-tight">立即啟動你嘅團隊項目</h2>
+                    <p class="mt-4 text-sm text-zinc-400 leading-relaxed">
+                        布料觸感定係印花精度，我哋都用最高規格幫你搞掂。歡迎直接透過下方的快速 WhatsApp 管道直接對接。
+                    </p>
+                    
+                    <div class="mt-8 p-6 bg-zinc-900/40 border border-zinc-800 rounded-xl">
+                        <p class="text-xs text-zinc-400">最快對接渠道：</p>
+                        <a href="https://api.whatsapp.com/send?phone=85251309781&text=你好！我睇咗網頁嘅 Sample，想查詢球衣/團隊衫訂製詳情。" target="_blank" class="mt-3 w-full inline-flex items-center justify-center px-6 py-4 text-base font-bold text-white bg-emerald-600 hover:bg-emerald-500 transition-all rounded-lg gap-3 shadow-xl shadow-emerald-600/10 group">
+                            <svg class="w-6 h-6 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.324 5.328 0 11.822 0c3.148.012 6.107 1.239 8.331 3.463 2.224 2.225 3.447 5.186 3.445 8.337-.003 6.495-5.322 11.82-11.817 11.82v-.002c-2.01-.001-3.987-.514-5.742-1.488L0 24zm6.15-4.218l.375.223c1.558.925 3.347 1.411 5.176 1.412 5.348 0 9.704-4.349 9.707-9.708.001-2.596-1.01-5.039-2.85-6.88-1.84-1.84-4.285-2.85-6.883-2.851-5.352 0-9.711 4.35-9.713 9.709-.001 1.895.493 3.749 1.43 5.37l.245.422L2.946 19.9l3.261-.855zm9.645-5.37c-.266-.134-1.579-.78-1.822-.867-.243-.088-.419-.133-.596.133-.176.265-.684.867-.838 1.044-.155.177-.309.199-.575.066-.266-.134-1.125-.415-2.144-1.325-.792-.707-1.327-1.58-1.482-1.847-.155-.266-.017-.41.117-.542.121-.12.266-.309.4-.464.133-.155.177-.265.266-.441.088-.177.044-.332-.022-.464-.066-.133-.596-1.436-.817-1.966-.215-.518-.432-.448-.596-.456-.153-.008-.331-.01-.508-.01-.177 0-.464.066-.707.332-.243.265-.928.906-.928 2.21 0 1.304.949 2.564 1.082 2.741.133.177 1.867 2.851 4.524 3.998.632.273 1.126.436 1.512.559.635.202 1.212.174 1.669.106.51-.077 1.579-.645 1.8-.1.222-.544.222-.883.155-.97-.067-.088-.244-.133-.51-.265z"/></svg>
+                            一鍵 WhatsApp 聯絡 (51309781)
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-xl">
+                    <h3 class="text-lg font-bold text-white mb-6">或填寫意向表格：</h3>
+                    <form onsubmit="event.preventDefault(); alert('提交成功！');" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-medium text-zinc-400 mb-1">聯絡人姓名</label>
+                            <input type="text" placeholder="例如：Gordon" class="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-pink-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-zinc-400 mb-1">團隊名稱</label>
+                            <input type="text" placeholder="例如：Orion FC" class="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-pink-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-zinc-400 mb-1">預計數量</label>
+                            <select class="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-pink-500 transition-colors">
+                                <option>10 - 20 件</option>
+                                <option>21 - 50 件</option>
+                                <option>51 件以上</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full py-3 bg-gradient-to-r from-cyan-500 to-pink-600 text-white font-bold text-sm rounded shadow-lg shadow-pink-600/10">
+                            提交表格
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-zinc-950 border-t border-zinc-900 py-8 text-center text-[11px] text-zinc-600 font-mono">
+        &copy; 2026 PROKIT Teamwear Studio. Refined with local image paths.
+    </footer>
+
+</body>
+</html>
