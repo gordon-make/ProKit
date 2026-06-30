@@ -23,6 +23,7 @@
             </div>
             <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide text-zinc-400">
                 <a href="#services" class="hover:text-white transition-colors">工藝細節</a>
+                <a href="#products" class="hover:text-cyan-400 transition-colors">可製作產品</a>
                 <a href="#samples" class="hover:text-pink-400 transition-colors">實物範例</a>
                 <a href="#process" class="hover:text-cyan-400 transition-colors">製作流程</a>
                 <a href="#contact" class="hover:text-white transition-colors">聯絡/報價</a>
@@ -90,7 +91,58 @@
         </div>
     </section>
 
-    <!-- 4. Sample Showcase Grid (已熱修復遮罩 Bug) -->
+    <!-- 4. Product Types -->
+    <section id="products" class="py-16 bg-zinc-900/10 border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-10">
+                <h2 class="text-2xl font-black text-white tracking-wider uppercase border-l-4 border-cyan-400 pl-3">
+                    AVAILABLE PRODUCTS / 可製作產品
+                </h2>
+                <p class="mt-2 text-zinc-400 text-sm">除咗球衣，我哋亦提供以下團隊服飾訂製。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative border border-zinc-800 rounded-xl overflow-hidden bg-zinc-900/40 hover:border-cyan-400/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10">
+                    <div class="aspect-[4/5] bg-zinc-900 relative overflow-hidden">
+                        <img src="training-set.png" alt="全拉鏈訓練套裝（長袖＋長褲）" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="hidden absolute inset-0 items-center justify-center text-xs text-zinc-500 font-mono">training-set.png</div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/35 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5">
+                        <span class="inline-block text-[10px] tracking-widest text-cyan-300 font-mono bg-zinc-950/70 border border-cyan-500/30 px-2 py-1 rounded">PRODUCT 01</span>
+                        <h3 class="mt-2 text-lg font-black text-white leading-tight">全拉鏈訓練套裝</h3>
+                        <p class="mt-1 text-xs text-zinc-300 leading-relaxed">長袖上身配長褲，秋冬訓練同外出都夠型，支援隊徽、名字同號碼客製。</p>
+                    </div>
+                </div>
+                <div class="group relative border border-zinc-800 rounded-xl overflow-hidden bg-zinc-900/40 hover:border-pink-400/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-pink-500/10">
+                    <div class="aspect-[4/5] bg-zinc-900 relative overflow-hidden">
+                        <img src="windbreaker.png" alt="機能防風外套" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="hidden absolute inset-0 items-center justify-center text-xs text-zinc-500 font-mono">windbreaker.png</div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/35 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5">
+                        <span class="inline-block text-[10px] tracking-widest text-pink-300 font-mono bg-zinc-950/70 border border-pink-500/30 px-2 py-1 rounded">PRODUCT 02</span>
+                        <h3 class="mt-2 text-lg font-black text-white leading-tight">機能防風外套</h3>
+                        <p class="mt-1 text-xs text-zinc-300 leading-relaxed">輕量、防風、實用性高，拉鏈版型俐落，適合比賽日同日常團隊著用。</p>
+                    </div>
+                </div>
+                <div class="group relative border border-zinc-800 rounded-xl overflow-hidden bg-zinc-900/40 hover:border-amber-400/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-500/10">
+                    <div class="aspect-[4/5] bg-zinc-900 relative overflow-hidden">
+                        <img src="team-polo.png" alt="高級團隊 POLO" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="hidden absolute inset-0 items-center justify-center text-xs text-zinc-500 font-mono">team-polo.png</div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/35 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5">
+                        <span class="inline-block text-[10px] tracking-widest text-amber-300 font-mono bg-zinc-950/70 border border-amber-500/30 px-2 py-1 rounded">PRODUCT 03</span>
+                        <h3 class="mt-2 text-lg font-black text-white leading-tight">高級團隊 POLO</h3>
+                        <p class="mt-1 text-xs text-zinc-300 leading-relaxed">俐落領型配高質感布料，活動、公司團隊、比賽日都保持整齊專業形象。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Sample Showcase Grid (已熱修復遮罩 Bug) -->
     <section id="samples" class="py-20 bg-zinc-950 border-b border-zinc-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-12">
@@ -151,7 +203,7 @@
         </div>
     </section>
 
-    <!-- 5. Production Process Section -->
+    <!-- 6. Production Process Section -->
     <section id="process" class="py-20 bg-zinc-900/10 border-b border-zinc-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -184,7 +236,7 @@
         </div>
     </section>
 
-    <!-- 6. Contact & Quote Section -->
+    <!-- 7. Contact & Quote Section -->
     <section id="contact" class="py-20 bg-zinc-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -224,6 +276,15 @@
                                 <option value="51 件以上">51 件以上</option>
                             </select>
                         </div>
+                        <div>
+                            <label for="product-type" class="block text-xs font-medium text-zinc-400 mb-1">產品類型</label>
+                            <select id="product-type" name="productType" class="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-pink-500 transition-colors">
+                                <option value="球衣/波衫">球衣 / 波衫</option>
+                                <option value="全拉鏈訓練套裝（長袖＋長褲）">全拉鏈訓練套裝（長袖＋長褲）</option>
+                                <option value="機能防風外套">機能防風外套</option>
+                                <option value="高級團隊 POLO">高級團隊 POLO</option>
+                            </select>
+                        </div>
                         <p id="form-error" class="hidden text-xs text-red-400">請填寫聯絡人姓名同團隊名稱。</p>
                         <button type="submit" class="w-full py-3 bg-gradient-to-r from-cyan-500 to-pink-600 text-white font-bold text-sm rounded shadow-lg shadow-pink-600/10 hover:opacity-90 transition-opacity">
                             透過 WhatsApp 提交查詢
@@ -251,6 +312,7 @@
                 var name = document.getElementById('contact-name').value.trim();
                 var team = document.getElementById('team-name').value.trim();
                 var quantity = document.getElementById('quantity').value;
+                var productType = document.getElementById('product-type').value;
 
                 if (!name || !team) {
                     errorEl.classList.remove('hidden');
@@ -264,6 +326,7 @@
                     '',
                     '聯絡人：' + name,
                     '團隊名稱：' + team,
+                    '產品類型：' + productType,
                     '預計數量：' + quantity
                 ].join('\n');
 
